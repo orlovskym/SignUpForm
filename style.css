@@ -4,8 +4,26 @@ margin: 0;
 }
 
 #image{
-    height: 100vh;
     width: auto;
+    height: 100vh;
+}
+
+#labelbody{
+    position: absolute;
+    width: 100%;
+    background: black;
+    opacity: 0.6;
+    color: white;
+    top: 8rem;
+    text-align: center;
+    font-size: 2em;
+    font-family: roboto;
+    height: 10vh;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
 }
 
 .right{
@@ -13,6 +31,32 @@ margin: 0;
     flex-direction: column;
 }
 
+.left{
+    position: relative;
+}
+
 .header,.footer{
     background-color: lightslategray;
+}
+
+.icon{
+    width: auto;
+    height: 10vh;
+    fill: white;
+}
+
+.attributionBox{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    color: white;
+    justify-content: center;
+    bottom: 3vh;
+    text-align: center;
+    align-items: center;
+    width: 100%;
+}
+
+.attributionBox a{
+    color: white;
 }
