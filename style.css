@@ -33,6 +33,7 @@ margin: 0;
 
 .left{
     position: relative;
+    display: flex;
 }
 
 .header,.footer{
