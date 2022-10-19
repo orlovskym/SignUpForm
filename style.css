@@ -3,6 +3,11 @@ display: flex;
 margin: 0;
 }
 
+.left{
+    position: relative;
+    display: flex;
+}
+
 #image{
     width: auto;
     height: 100vh;
@@ -26,20 +31,6 @@ margin: 0;
 
 }
 
-.right{
-    display: flex;
-    flex-direction: column;
-}
-
-.left{
-    position: relative;
-    display: flex;
-}
-
-.header,.footer{
-    background-color: lightslategray;
-}
-
 .icon{
     width: auto;
     height: 10vh;
@@ -60,4 +51,57 @@ margin: 0;
 
 .attributionBox a{
     color: white;
+}
+
+
+
+
+
+
+
+.right{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+}
+
+.header,.footer{
+    background-color: #f8f8ff;
+    height: 30vh;
+    width: 100%;
+}
+
+.header,.footer,.middle{
+    padding-left: 30px;
+}
+
+.header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+
+.middle{
+    display: flex;
+    flex-direction: column;
+    height: 40vh;
+    box-shadow: 1px 1px;
+}
+
+#form{
+    display: flex;
+    flex-direction: column;
+
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+.formContainer{
+    display: flex;
+
 }
