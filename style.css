@@ -58,21 +58,21 @@ margin: 0;
 
 
 
-
 .right{
     display: flex;
     flex-direction: column;
     width: 100%;
-
+    background-color: #f8f8ff;
+    
 }
 
 .header,.footer{
-    background-color: #f8f8ff;
     height: 30vh;
     width: 100%;
 }
 
 .header,.footer,.middle{
+    box-sizing: border-box;
     padding-left: 30px;
 }
 
@@ -88,6 +88,8 @@ margin: 0;
     flex-direction: column;
     height: 40vh;
     box-shadow: 1px 1px;
+    justify-content: space-between;
+    background-color: white;
 }
 
 #form{
@@ -103,5 +105,5 @@ form{
 
 .formContainer{
     display: flex;
-
+    gap: 10px;
 }
