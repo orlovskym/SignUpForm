@@ -7,14 +7,18 @@ const password2 = document.getElementById('password2')
 const button = document.getElementById('button')
 const errorElement = document.getElementById('error')
 
-button.addEventListener('click', (e) => {
+button.addEventListener('click', () => {
     if (first_name.value === '' || first_name == null) {
-        messages.push('First name is required.')
-    }
-
-    if (messages.length > 0) {
-        e.preventDefault();
-        errorElement.innerText = messages.join(', ')
-    }
-
-})
+        errorElement.innerText='First name is required.'
+    } else if (last_name.value === '' || last_name == null) {
+        errorElement.innerText='Last name is required.'
+    } else if (email.value === '' || email == null) {
+        errorElement.innerText='Email is required.'
+    } else if (phone.value === '' || phone == null) {
+        errorElement.innerText='Phone number is required.'
+    } else if (password.value === '' || password == null) {
+        errorElement.innerText='Password is required.'
+    } else if (password.value !== password2.value) {
+        errorElement.innerText='Passwords do not match.'
+    } else errorElement.innerText=''
+    })
